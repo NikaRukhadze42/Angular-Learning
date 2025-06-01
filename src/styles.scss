@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+app-parent {
+    margin-top: 100px!important;
+    display: flex;
+    border: 2px solid red;
+    padding: 10px;
+    width: 600px;
+    margin: auto;
+    border-radius: 4px;
+}
+
+app-child {
+    display: block;
+    border: 2px dotted green;
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    border-radius: 4px;
+}
