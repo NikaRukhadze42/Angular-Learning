@@ -1,1 +1,8 @@
-<app-parent></app-parent>
+<!-- <app-parent></app-parent> -->
+ <ng-container *ngFor="let user of Users">
+    <ng-container *ngIf="user.Name == 'Elisabed'">
+        Id: {{ user.Id }}
+        Name: {{ user.Name }}
+        LastName: {{ user.LastName }}
+    </ng-container>
+ </ng-container>
