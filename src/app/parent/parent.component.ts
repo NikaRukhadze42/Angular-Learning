@@ -7,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
   public text: string = 'La La Land';
+  public dataFromChild: string;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  recieveDataFromChild($event)
+  {
+    this.dataFromChild = $event;
   }
 
 }

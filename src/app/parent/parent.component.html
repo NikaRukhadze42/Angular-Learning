@@ -1,1 +1,2 @@
-<app-child [TextFromOtherComponent]="text"></app-child>
+<h4>Yoo: {{ dataFromChild }}</h4>
+<app-child (SendDataFromChild)="recieveDataFromChild($event)" [TextFromOtherComponent]="text"></app-child>
