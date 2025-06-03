@@ -1,8 +1,9 @@
 <!-- <app-parent></app-parent> -->
- <ng-container *ngFor="let user of Users">
+ <ng-container *ngFor="let user of Users; let i = index">
     <ng-container *ngIf="user.Name == 'Elisabed'">
         Id: {{ user.Id }}
         Name: {{ user.Name }}
         LastName: {{ user.LastName }}
+        Index: {{i}}
     </ng-container>
  </ng-container>
