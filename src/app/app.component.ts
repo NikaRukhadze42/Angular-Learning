@@ -12,11 +12,4 @@ interface User {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  inputVal: string;
-  Users: User[] = [
-    { Id: '1', Name: 'Nika', LastName: 'Rukhadze'},
-    { Id: '2', Name: 'Elisabed', LastName: 'Tushka'},
-    { Id: '3', Name: 'Bachana', LastName: 'Yoriauli'},
-    { Id: '4', Name: 'Lela', LastName: 'Yoriauli'}
-  ]
 }
