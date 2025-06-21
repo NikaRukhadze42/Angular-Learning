@@ -1,0 +1,8 @@
+<input type="text" class="form-control" (input)="UpdateServerName($event)">
+
+
+<button class="btn btn-primary mt-2" [disabled]="AllowNewServer" (click)="OnServerCreate()">Add Server</button>
+<app-server></app-server>
+<app-server></app-server>
+
+<h1>{{ ServerCreate }}</h1>
