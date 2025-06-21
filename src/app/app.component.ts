@@ -12,4 +12,12 @@ interface User {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  showDetails = false;
+  TimeStampLogs = [];
+
+  onButtonClick(event: any)
+  {
+    this.showDetails = !this.showDetails;
+    this.TimeStampLogs.push(event.timeStamp)
+  }
 }

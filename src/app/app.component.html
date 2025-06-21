@@ -1,3 +1,10 @@
-<div class="d-flex justify-content-center">
-    <app-servers></app-servers>
+<div class="p-3">
+    <button class="btn btn-primary" (click)="onButtonClick($event)">Display Details</button>
+    <p *ngIf="showDetails" class="mt-2 mb-2">Password == Tuna</p>
+    <hr>
+    <p *ngFor="let timeStamp of TimeStampLogs; let i = index" 
+    [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : ''}" 
+    [ngClass]="{'text-white' : i >= 4 }">
+        {{ timeStamp }}
+    </p>
 </div>
