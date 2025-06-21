@@ -5,4 +5,7 @@
 <app-server></app-server>
 <app-server></app-server>
 
-<h1>{{ ServerCreate }}</h1>
+<h1 *ngIf="ServerWasCreated; else noServer">{{ ServerCreate }}</h1>
+<ng-template #noServer>
+    <h1>No server was created!!!!</h1>
+</ng-template>
