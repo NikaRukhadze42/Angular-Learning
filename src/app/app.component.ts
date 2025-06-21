@@ -12,7 +12,7 @@ interface User {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Angular-First-Pet-Project';
+  inputVal: string;
   Users: User[] = [
     { Id: '1', Name: 'Nika', LastName: 'Rukhadze'},
     { Id: '2', Name: 'Elisabed', LastName: 'Tushka'},
